@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: green;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav a:hover{
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+
+.active{
+    color: gold;
+    border-bottom: 2px solid gold;  
+}
+
+.hero{
+    height: 400px;
+    width: 100%;
+    background-image: url('/Images/welcome.png');
+    background-size: contain; 
+}
+
+.inner_hero{
+    height: 400px;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.309);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome{
+    width: 70%;
+    margin: auto;
+}
+
+.welcome h2{
+    font-size: 54px;
+    color: #fff;
+}
+
+.welcome p{
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.welcome a, .section2 a{
+    background-color: gold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+
+
+/* Partners */
+
+.partners{
+    width: 50%;
+    height: 70px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    border-radius: 4px;
+    position: relative;
+    animation: updown 4s ease-in-out infinite;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+@keyframes updown {
+    from{
+        top: -10px;
+    }
+    to{
+        top: 10px;
+    }
+}
+
+.joblisting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 25px auto;
+}
+
+#section1_desc{
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.section1_category a{
+    color: gray;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.section1_category a.active{
+    border-bottom: 3px solid green;
+}
+
+/* Jobs */
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.job_item{
+    width: 23%;
+    height: 450px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 1px 3px 4px 2px;
+}
+
+.inner_job_item{
+    padding: 14px;
+}
+
+.job_item_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 14px auto;
+}
+
+.job_product h1{
+    margin-bottom: 10px;
+}
+
+.product_time{
+    margin-bottom: 50px;
+    padding: 4px auto;
+}
+
+.product_time span{
+    padding: 8px 14px;
+    border-radius: 10px; 
+}
+
+.product_time span.fulltime{
+    background-color: rgb(149, 235, 149);
+}
+.product_time span.design{
+    background-color: #f7e28e;
+}
+
+.location{
+    font-weight: 600;
+}
+
+.description{
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.job_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job_buttons .btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn.view{
+    border: 2px solid gold;
+}
+
+.btn.apply{
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+}
+
